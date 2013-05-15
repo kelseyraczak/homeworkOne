@@ -1,0 +1,86 @@
+.clearFix {
+  *zoom: 1;
+}
+.clearFix:before,
+.clearFix:after {
+  content: "";
+  clear: both;
+  display: block;
+  line-height: 0;
+}
+* {
+  margin-top: 0;
+}
+#container {
+  position: relative;
+  max-width: 950px;
+  width: 90%;
+  background-color: #5c93c2;
+  margin: 0 auto;
+}
+h1 {
+  color: #ffffff;
+}
+header {
+  position: relative;
+  background-color: #000000;
+  height: 100px;
+  -webkit-border-radius: 0 0 10px 10px;
+  -moz-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+}
+header h1 {
+  position: relative;
+  top: 30px;
+  left: 30px;
+}
+@media only screen and (max-device-width: 768px), only screen and (max-width: 768px) {
+  header {
+    height: 100px;
+  }
+  h1 {
+    display: none;
+  }
+}
+nav {
+  padding: 30px;
+  font: 300 12px 'sans-serif';
+}
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 10px;
+  background-color: #808080;
+  text-align: center;
+  padding: 10px;
+  -webkit-border-radius: 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px;
+  border-radius: 10px 10px 10px;
+}
+nav a:hover {
+  color: #404040;
+}
+nav a:visited {
+  color: #999999;
+}
+#content {
+  background-color: #fff;
+  padding: 20px;
+}
+#content h1 {
+  color: #000;
+}
+#content p {
+  position: relative;
+  top: 50px;
+  width: 500px;
+  float: left;
+}
+#content img {
+  position: relative;
+  top: 30px;
+  float: right;
+}
+#content form {
+  float: left;
+}
